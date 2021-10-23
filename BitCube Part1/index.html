@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Stocks</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+       <form class="input-stock">
+           <h2>Add Stock</h2>
+        <label for="products" class="sub-heading">Products:</label><br><br>
+        <select name="products" id="products">
+            <option value="">--Please choose a product--</option>
+            <option value="prod1">PRODUCT_1</option>
+            <option value="prod2">PRODUCT_2</option>
+            <option value="prod3">PRODUCT_3</option>
+          </select><br><br>
+        <label for="tot-items" class="sub-heading">Items Recieved:</label><br><br>
+        <input type="number" id="tot-items" name="tot-items" min="1" max="100" placeholder="1-100"><br><br>
+        <label for="price" class="sub-heading">Price of Items:</label><br><br>
+        <input type="text" id="price" name="price" placeholder="Enter in Rands"><br><br>
+        <div class="submit-button"><input type="submit" value="Submit"></div>
+       </form>
+       
+       <form class="sell-stock">
+        <h2>Remove Stock</h2>
+     <label for="products" class="sub-heading">Products:</label><br><br>
+     <select name="products" id="products">
+        <option value="">--Please choose a product--</option>
+        <option value="prod1">PRODUCT_1</option>
+        <option value="prod2">PRODUCT_2</option>
+        <option value="prod3">PRODUCT_3</option>
+      </select><br><br>
+      <label for="email" class="sub-heading">Buyers Email:</label><br><br>
+     <input type="email" id="email" name="email" placeholder="Please enter a valid email."><br><br>
+     <label for="tot-items" class="sub-heading">Number of items:</label><br><br>
+     <input type="number" id="tot-items" name="tot-items" min="1" max="100" placeholder="1-100"><br><br>
+     <div class="submit-button"><input type="submit" value="Submit"></div>
+    </form><br>
+
+  <div class=table-container>
+    <table class="table">
+        <h2>STOCK</h2>
+        
+        <tr>
+          <th class="heading">Products</th>
+          <td class="product-names">PROD_1</td>
+          <td class="product-names">PROD_2</td>
+          <td class="product-names">PROD_3</td>
+        </tr>
+        <tr>
+          <th class="heading">Current Stock</th>
+          <td id="current-stock"></td>
+          <td id="current-stock"></td>
+          <td id="current-stock"></td>
+        </tr>
+        <tr>
+          <th class="heading">Average Price</th>
+          <td id="average-price"></td>
+          <td id="average-price"></td>
+          <td id="average-price"></td>
+          <td><input type="button" value="Show" onclick="insert()" /></td>
+        </tr>
+        
+      </table>
+      </div> 
+</div>
+
+   
+        <script src="./stocks.js" async defer></script>
+</body>
+</html>

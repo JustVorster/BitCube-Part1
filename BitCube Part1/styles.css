@@ -1,0 +1,48 @@
+body {
+    font-family: Poppins, "Helvetica Neue";
+    padding-top: 175px;  
+    background-color: #FFF;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-stock, .sell-stock  {
+    width: 30%;
+    border: 2px solid #000;
+    display: inline-block; 
+    border-radius: 5%;
+    background: rgba(255,255,255, 0.3);
+    box-shadow: 0 0 10px #000;
+}
+
+.table {
+    width: 80%;
+    height: 30%;
+    border: 2px solid #000;
+    border-radius: 9%;
+    background: rgba(255,255,255, 0.3);
+    box-shadow: 0 0 10px #000;
+}
+
+.submit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.sub-heading {
+    font-size: 24px;
+}
